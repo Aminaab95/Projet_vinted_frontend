@@ -7,9 +7,6 @@ const Offer = () => {
   const [data, setData] = useState({});
   const [isLoading, setIsLoading] = useState(true);
 
-  //   const params = useParams();
-  //     const id = params.id;
-
   const { id } = useParams();
   const navigate = useNavigate();
 
