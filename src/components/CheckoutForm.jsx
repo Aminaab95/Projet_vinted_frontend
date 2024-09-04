@@ -22,12 +22,11 @@ function CheckoutForm() {
     if (error) {
       console.log("[error]", error);
     } else {
-      // Envoi des informations de paiement à votre backend pour traitement
       const response = await axios.post(
         "https://lereacteur-vinted-api.herokuapp.com/v2/payment",
         {
           title: "Le Titre de l'annonce",
-          amount: 10, // ici, c'est un exemple, utilisez le montant réel
+          amount: 10,
           paymentMethodId: paymentMethod.id,
         }
       );

@@ -19,7 +19,7 @@ function Payment({ token }) {
   // Configuration des options Stripe
   const options = {
     mode: "payment",
-    amount: Number((price * 100).toFixed(0)), // Le prix en centimes
+    amount: Number((price * 100).toFixed(0)),
     currency: "eur",
   };
 
